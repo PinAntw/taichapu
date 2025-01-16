@@ -1,3 +1,6 @@
+import { fontFamily } from "tailwindcss/defaultTheme";
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -11,7 +14,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         maincolor:  "#FAFAF8",
-        backgroundcolor: "#FAE9E1"
+        backgroundcolor: "#FAE9E1",
+        maingreen: "#A5D6B3"
+      },
+      fontFamily: {
+        sans: ["Geist", ...fontFamily.sans],
+        mono: ["Geist_Mono", ...fontFamily.mono], 
+        serif: ["Noto Serif TC", ...fontFamily.serif]
       },
     },
   },
