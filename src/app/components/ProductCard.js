@@ -45,16 +45,16 @@ function ProductCard({ name, price, images, description }) {
           onClick={toggleModal}
         >
           <div
-            className="bg-white p-6 rounded shadow-lg flex flex-col md:flex-row overflow-y-auto"
+            className="bg-white p-6 rounded shadow-lg flex flex-col md:flex-row overflow-y-auto h-screen max-h-screen"
             style={{
               width: "90%",
-              maxWidth: "800px",
+              maxWidth: "1000px",
               height: "auto",
               maxHeight: "90%",
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative w-full h-2/3 md:w-1/2 md:h-3/4 overflow-hidden rounded">
+            <div className="relative w-full h-[400vh] md:w-1/2 md:h-3/4 overflow-hidden rounded md:mt-16">
               <Image
                 src={images[currentImageIndex]}
                 alt={`${name} - ${currentImageIndex + 1}`}
@@ -75,10 +75,10 @@ function ProductCard({ name, price, images, description }) {
                 ▶
               </button>
             </div>
-            <div className="w-full md:w-1/2 p-4 flex flex-col justify-between overflow-y-auto">
+            <div className="relative w-full md:w-1/2 p-4 flex flex-col justify-between overflow-y-auto mt-4 md:mt-12">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-black">{name}</h2>
-                <div className="text-gray-700 mb-4">價格: {price}</div>
+                <div className="text-black font-bold mb-4">價格: {price}</div>
                 <div className="text-gray-700 mb-4">{description}</div>
               </div>
               <button
