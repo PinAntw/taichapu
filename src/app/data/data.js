@@ -68,20 +68,109 @@ export const categories = [
   
   // **商品描述**
   export const descriptions = {
-    tea: (
+    tea : (
       <div>
+        <h2 className="text-xl font-bold mb-4">正常發酵、無烘焙的高山烏龍茶</h2>
         <p className="mb-4">
-          正常發酵、無烘焙的高山烏龍茶<br />
-          來自高山海拔超過1500公尺以上，獨特的高山環境和氣候條件讓這款茶葉成為台灣頂級烏龍茶之一。
+          來自海拔超過 1500 公尺以上的高山，獨特的高山環境與氣候條件，
+          讓這款茶葉成為台灣頂級烏龍茶之一。大禹嶺、梨山、阿里山的茶葉，
+          以其清新、香醇的口感與極具層次感的香氣，深受茶友推崇。
         </p>
-        <h4 className="text-lg font-bold mb-2">產品特色：</h4>
-        <ul className="list-disc list-inside text-gray-700 mb-4">
-          <li>香氣與口感：高山烏龍茶具備獨特的花香與果香，軟潤好入喉。</li>
-          <li>生長環境：高海拔、雲霧繚繞、日夜溫差大，使茶葉味道更加鮮明、醇厚。</li>
-          <li>健康益處：富含抗氧化物質，如茶多酚和兒茶素，促進新陳代謝。</li>
+    
+        <h3 className="text-lg font-bold mt-6 mb-2">產品特色</h3>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>
+            <strong>香氣與口感：</strong>
+            <span className="ml-1">高山烏龍茶具備獨特的花香與果香，軟潤好入喉，喉韻十足，令人回味無窮。</span>
+          </li>
+          <li>
+            <strong>生長環境：</strong>
+            <span className="ml-1">高海拔、雲霧繚繞、日夜溫差大，使茶葉的成長速度較慢，葉片厚實，茶湯更加醇厚、甘甜。</span>
+          </li>
+          <li>
+            <strong>健康益處：</strong>
+            <span className="ml-1">富含抗氧化物質，如茶多酚與兒茶素，有助於抗衰老、促進新陳代謝、降血脂與抗炎。此外，咖啡因含量較低，適合日常飲用。</span>
+          </li>
+          <li>
+            <strong>茶葉來源：</strong>
+            <span className="ml-1">來自傳承百年的茶園，由第四代茶商經營的美而佳茶園，茶葉採用天然有機肥料，如甘蔗渣、米糠、花生殼、黃豆胚芽、蚵殼粉、魚骨、昆布等，確保茶葉能久浸不苦澀，前三泡皆能保持清香與回甘。</span>
+          </li>
+        </ul>
+    
+        <h3 className="text-lg font-bold mt-6 mb-2">產品資訊</h3>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>產地：</strong>台灣</li>
+          <li><strong>規格：</strong>四兩 (150g) / 包</li>
+          <li><strong>保存期限：</strong>包裝標示</li>
+          <li><strong>保存方式：</strong>避免高溫、潮濕、日光直射</li>
+          <li><strong>包裝方式：</strong>抽真空包裝，確保新鮮茶香</li>
         </ul>
       </div>
     ),
+    redtea : (
+      <div>
+        <h2 className="text-xl font-bold mb-4">台東鹿野紅烏龍茶</h2>
+        <p className="mb-4">
+          台東鹿野紅烏龍茶是台灣東部獨具特色的茶葉，擁有豐富的歷史背景、
+          獨特的栽培環境以及精緻的製茶工藝。這款茶的魅力不僅在於其精緻的外觀和味道，
+          更在於其獨特的香氣和口感層次，使其在台灣茶葉市場中脫穎而出。
+        </p>
+    
+        <h3 className="text-xl font-bold mt-6 mb-4">產品特色</h3>
+        <ul className="list-disc pl-5 space-y-3">
+          <li>
+            <strong>地理環境與氣候特性：</strong>
+            <span className="ml-1">
+              鹿野位於台東縣東部，這裡山清水秀，擁有典型的熱帶與高海拔涼爽氣候。
+              日夜溫差大，使茶葉香氣與風味更佳。鹿野地區土壤富含有機質，
+              提升茶葉品質，特別適合紅烏龍茶的種植。
+            </span>
+          </li>
+          <li>
+            <strong>紅烏龍茶的發酵特徵：</strong>
+            <span className="ml-1">
+              紅烏龍茶的發酵程度約為 55~70%，趨近於紅茶。這種中等發酵方式，
+              既保留烏龍茶的清新香氣，又帶有紅茶的濃郁口感，形成獨特的風味。
+            </span>
+          </li>
+          <li>
+            <strong>風味特徵與口感：</strong>
+            <span className="ml-1">
+              鹿野紅烏龍茶的茶湯金黃透亮，帶有琥珀色澤。入口可感受到糖香、
+              水甜與回甘。其較高的發酵程度使茶湯更加圓潤，無論熱飲或冷飲，
+              都能提供不同的品飲樂趣。
+            </span>
+          </li>
+          <li>
+            <strong>健康效益：</strong>
+            <span className="ml-1">
+              富含茶多酚與抗氧化物質，有助於抗衰老、促進新陳代謝，減少自由基損害。
+              其消化助益與利尿特性可幫助清理體內毒素。適量的咖啡因能提神，
+              使人在工作或學習時保持清醒。
+            </span>
+          </li>
+          <li>
+            <strong>市場與文化價值：</strong>
+            <span className="ml-1">
+              鹿野紅烏龍茶已成為台灣茶產業中的明星產品，不僅在國內市場受熱捧，
+              亦在國際茶展中獲得高度評價。其不僅展現台東地區的獨特風味，
+              也體現台灣茶藝的精緻與高雅，傳遞茶農對自然的熱愛與尊重。
+            </span>
+          </li>
+        </ul>
+    
+        <h3 className="text-xl font-bold mt-6 mb-4">產品資訊</h3>
+        <ul className="list-disc pl-5 space-y-3">
+          <li><strong>產地：</strong>台灣</li>
+          <li><strong>規格：</strong>四兩 (150g) / 包</li>
+          <li><strong>保存期限：</strong>包裝標示</li>
+          <li><strong>保存方式：</strong>避免高溫、潮濕、日光直射</li>
+          <li><strong>包裝方式：</strong>抽真空包裝，確保新鮮茶香</li>
+        </ul>
+      </div>
+    ),
+    
+
     gua : (
       <div>
         <h2 className="text-xl font-bold mb-4">茶瓜子——傳統風味與健康的完美結合</h2>
@@ -225,7 +314,7 @@ export const categories = [
       name: "【台灣茶】台東鹿野紅烏龍茶",
       price: prices.teared_price,
       images: ["/goods/teared1.jpg", "/goods/teared2.jpg", "/goods/teared3.jpg"],
-      description: descriptions.tea,
+      description: descriptions.redtea,
       category: "tea",
     },
     {
