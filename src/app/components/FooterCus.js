@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FooterCus() {
   return (
-    <footer className="bg-gray-800 text-white text-center p-4 md:p-8 w-full">
+    <footer className="bg-maingreen text-white text-center p-4 md:p-8 w-full">
       <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
         {/* 圖片 */}
         <div className="flex-shrink-0">
@@ -19,7 +19,7 @@ export default function FooterCus() {
         <div className="text-center">
           <p className="text-sm md:text-xl font-extrabold">台茶舖 - 最懂你的小舖</p>
           <p className="text-xs md:text-lg text-gray-400 font-bold mt-1">
-            聯絡我們: 09-39068699
+            Line ID: jefflee614  （富哥） 
           </p>
           <p className="text-xs md:text-lg text-gray-400 font-bold">
             或掃描 QRcode 專人回覆

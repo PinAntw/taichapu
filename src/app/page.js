@@ -55,7 +55,18 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+              {/* 新增的圖片區塊 */}
+              <div className="mt-6">
+                <h3 className="text-lg font-bold text-black mb-2">掃描QRcode聯絡客服訂購</h3>
+                <h3 className="text-center text-lg font-bold text-black mb-2">【富哥】LineID：jefflee614</h3>
+                <img 
+                  src="/qrcode.jpg" 
+                  alt="推薦商品"
+                  className="w-full rounded-lg shadow-md"
+                />
+              </div>
             </aside>
+            
 
             {/* 右側商品區塊 */}
             <section>

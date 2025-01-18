@@ -15,7 +15,7 @@ export default {
         foreground: "var(--foreground)",
         maincolor:  "#FAFAF8",
         backgroundcolor: "#FAE9E1",
-        maingreen: "#A5D6B3"
+        maingreen: "#2E4044"
       },
       fontFamily: {
         sans: ["Geist", ...fontFamily.sans],

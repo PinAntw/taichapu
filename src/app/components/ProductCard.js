@@ -26,7 +26,7 @@ function ProductCard({ name, price, images, description }) {
             alt={name}
             width={240}
             height={240}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
         <h4 className="text-lg font-semibold text-black">{name}</h4>
@@ -45,23 +45,20 @@ function ProductCard({ name, price, images, description }) {
           onClick={toggleModal}
         >
           <div
-            className="bg-white p-6 rounded shadow-lg flex flex-col md:flex-row overflow-y-auto h-screen max-h-screen"
-            style={{
-              width: "90%",
-              maxWidth: "1000px",
-              height: "auto",
-              maxHeight: "90%",
-            }}
+            className="bg-white p-6 rounded shadow-lg flex flex-col md:flex-row overflow-y-auto h-auto max-h-[90vh] w-[90%] md:w-[80%] max-w-[1000px]"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative w-full h-[400vh] md:w-1/2 md:h-3/4 overflow-hidden rounded md:mt-16">
-              <Image
-                src={images[currentImageIndex]}
-                alt={`${name} - ${currentImageIndex + 1}`}
-                width={400}
-                height={400}
-                className="w-full h-full object-cover"
-              />
+            {/* 圖片區塊 */}
+            <div className="relative w-full md:w-1/2 flex justify-center items-center">
+              <div className="w-full max-h-[80vh] flex justify-center items-center">
+                <Image
+                  src={images[currentImageIndex]}
+                  alt={`${name} - ${currentImageIndex + 1}`}
+                  width={400}
+                  height={400}
+                  className="max-w-full max-h-full object-contain rounded"
+                />
+              </div>
               <button
                 onClick={prevImage}
                 className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
@@ -75,7 +72,9 @@ function ProductCard({ name, price, images, description }) {
                 ▶
               </button>
             </div>
-            <div className="relative w-full md:w-1/2 p-4 flex flex-col justify-between overflow-y-auto mt-4 md:mt-12">
+
+            {/* 文字資訊 */}
+            <div className="relative w-full md:w-1/2 p-4 flex flex-col justify-between overflow-y-auto mt-4 md:mt-0">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-black">{name}</h2>
                 <div className="text-black font-bold mb-4">價格: {price}</div>

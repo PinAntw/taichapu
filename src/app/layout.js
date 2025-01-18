@@ -25,11 +25,20 @@ const notoSerifTC = Noto_Serif_TC({
 export const metadata = {
   title: "台茶舖-最懂你的雜貨舖",
   description: "台茶舖-最懂你的雜貨舖",
+  icons: {
+    icon: "/logov2.png", // 32x32 px
+    shortcut: "/logov2.png", // 32x32 px
+    apple: "/logov2.png", // 180x180 px
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="zh-TW">
+      <head>
+        <link rel="icon" href="/logov2.png" />
+        <link rel="apple-touch-icon" href="/logov2.png" />
+      </head>
       {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > */}
